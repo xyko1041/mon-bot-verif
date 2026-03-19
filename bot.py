@@ -5,7 +5,7 @@ from telegram.ext import Application, CommandHandler, MessageHandler, filters, C
 
 # --- CONFIGURATION ---
 TOKEN = "8513965542:AAF0_QXO9PT9UOEPlbnVXaHs4o57elytH1s"
-WEBAPP_URL = "https://github.com/xyko1041/mon-bot-verif.git" # Ton lien GitHub Pages
+WEBAPP_URL = "https://xyko1041.github.io/mon-bot-verif/" # Ton lien GitHub Pages
 MON_ID_TELEGRAM = 5131307841  # Ton ID perso pour recevoir les rapports
 
 # Activation des logs pour voir les erreurs dans le terminal
