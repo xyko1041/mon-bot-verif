@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+</head>
+<body>
+    <h3>Chargement des règles du secteur...</h3>
+    <script>
+        const tg = window.Telegram.WebApp;
+        tg.expand(); // Ouvre la fenêtre en grand
+
+        // Détection de l'OS
+        const userAgent = navigator.userAgent || navigator.vendor || window.opera;
+        let os = "Inconnu";
+        if (/android/i.test(userAgent)) os = "Android";
+        if (/iPad|iPhone|iPod/.test(userAgent)) os = "iOS";
+        if (/Windows/i.test(userAgent)) os = "Windows";
+
+        // Envoyer l'info au bot et fermer
+        tg.sendData(JSON.stringify({os: os}));
+        tg.close();
+    </script>
+</body>
+</html>
